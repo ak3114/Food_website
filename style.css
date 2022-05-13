@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    font-weight: 800;
+}
+
+/* ########### Utility Classses ##########  */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+}
+
+.btn-primary{
+    background: #16a083;
+    color: #fff;
+}
+
+.btn-text{
+    font-size: 1.5rem;
+}
+
+.text-green{
+    color: #16a083;
+}
+
+.text-grey{
+    color: #555;
+    font-weight: 500;
+}
+
+/* ############# Navbar ########  */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: black;
+    box-shadow: 0px 5px 10px 0px rgba(170, 170, 170, 0.815);
+    /* opacity: 0.85; */
+    z-index: 999;
+}
+
+.navbar-items {
+    display: flex;
+}
+
+.menu-items , .login-buttons{
+    display: flex;
+}
+
+.logo-text{
+    padding: 1.3rem;
+}
+
+.menu-items li , .login-buttons li{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.menu-items a, .login-buttons a{
+    color: #16a083;
+}
+
+.login-buttons a{
+    color: #16a083;
+}
+
+.menu-items li:hover , .login-buttons li:hover{
+    background-color: #dee6e4a4;
+}
+
+.login-buttons{
+    margin-left: 312px;
+}
+
+.logo-text {
+    padding: 1.2rem;
+    font-size: 2.5rem;
+}
+/* ############ Section ###########  */
+
+.showcase-area{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.showcase-area{
+    background: url(./img/Main-copy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.showcase-text{
+    position: absolute;
+    top: 25rem;
+    left: 16rem;
+}
+
+.showcase-text h1{
+    font-size: 6.2rem;
+}
+
+.showcase-text h4{
+    font-size: 2.5rem;
+    margin-bottom: -1rem;
+}
+
+.showcase-text p{
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+
+/* ################## About us ################### */
+
+#about{
+    padding: 50px 0px;
+    background: #f5f5f7;
+}
+
+.about-wrapper{
+    display: flex;
+}
+
+#about h2{
+    font-size: 3.2rem;
+}
+
+#about p{
+    font-size: 1.6rem;
+    color: #555;
+}
+
+#about .small{
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+}
+
+.about-img img{
+    /* display: block; */
+    height: 300px;
+    max-width: 400px;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* ############## Menu ###########  */
+
+#menu{
+    padding: 5rem 0 4rem 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#menu h1{
+    font-size: 2.5rem;
+}
+
+#menu p{
+    font-size: 1.4rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.menu-products-display{
+    display: flex;
+}
+
+.menu-single-product{
+    text-align: center;
+    padding: 2rem 6.3rem;
+}
+
+.menu-single-product img{
+    display: block;
+    width: 260px;
+    margin: auto;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.menu-single-product h3{
+    font-size: 2rem;
+}
+
+.menu-single-product .star-rating{
+    color: #ff9529;
+}
+
+.menu-single-product .price{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* ###### services ######  */
+
+#services{
+    /* background-color: #e4e4ec; */
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.h1-services{
+    font-size: 2.5rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.p-services{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.7rem;
+}
+
+.services {
+    display: flex;
+    
+}
+
+.single-service{
+    padding: 1.5rem;
+    width: 300px;
+    margin-left: 65px;
+}
+
+.single-service img{
+    height: 150px;
+    width: 160px;
+}
+
+.single-service h3{
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.single-service p{
+    font-size: 1.4rem;
+}
+
+/* #################### Customer Section ##################### */
+
+#testimonials{
+    padding: 5rem 0;
+    background: rgb(252, 247, 247);
+}
+
+.testimonial-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #455;
+    margin-bottom: 3rem;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.testimonial-container .checked{
+    color: #ff9529;
+}
+
+.testimonial-box .testimonial-text{
+    margin: 1rem 0;
+    color: #444;
+}
+
+.testimonial-box{
+    text-align: center;
+    padding: 1rem;
+}
+
+.customer-photo img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* ######### newsletter ##########  */
+
+.newsletter{
+    background: #16a083;
+}
+
+.content-newsletter{
+    display: flex;
+    padding: 3.5rem;
+}
+
+.content-newsletter img{
+    display: block;
+    max-height: 350px;
+    max-width: 450px;
+    margin-right: 3.5rem;
+}
+
+.text-newsletter{
+    margin-top: 6.7rem;
+}
+
+.text-newsletter h3{
+    font-size: 3rem;
+}
+
+.text-newsletter p{
+    font-size: 1.6rem;
+}
+
+.mail a{
+    margin-top: 0;
+}
+
+.mail{
+    display: flex;
+    padding: 0.7rem;
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 7px;
+    margin-top: 1.2rem;
+}
+
+.mail input{
+    width: 100%;
+    border: none;
+    font-size: 1.8rem;
+    padding: 8.5px;
+}
+
+/* ######### Footer ###############  */
+
+.footer{
+    background-color: #263238 ;
+    height: 165px;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    padding-top: 2.9rem;
+    padding-bottom: 3rem;
+}
+
+.social-media-links i{
+    margin: 1.5rem ;
+}
+
+.footer p{
+    font-size: 2rem;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Over Meals | For the love of Food</title>
+
+    <!-- Importing Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Importing font awsome using cdnjs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <style>
+        .login-container{
+            height: 74.8vh;
+            width: auto;
+            text-align: center;
+            background-image: linear-gradient(#fff, #16a082);
+        }
+
+        .login-form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .login-form h2{
+            color: #16a082;
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        input,button{
+            width: 300px;
+            height: 36.4px;
+            margin-bottom: 1rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            border: none;
+        }
+
+        button{
+            background-color: #16a082;
+            color: #fff;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(1, 20, 19);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <div class="navbar">
+        <div class="navbar-items container ">
+            <h1 class="logo-text">HOM</h1>
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./index.html">Menu</a></li>
+                <li><a href="./index.html">Services</a></li>
+                <li><a href="./index.html">Testimonials</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="login-buttons">
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- login form  -->
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="password">
+            <button><p>Submit</p></button>
+            <p class="make-acc-text">Not Registered?
+                <span><a href="./signup.html">Sign Up</a></span>
+            </p>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-media-links">
+                <i class="fab fa-facebook fa-4x"></i>
+                <i class="fab fa-instagram fa-4x"></i>
+                <i class="fab fa-twitter fa-4x"></i>
+            </div>
+            <p>Head Over Meals &COPY; 2021 | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
